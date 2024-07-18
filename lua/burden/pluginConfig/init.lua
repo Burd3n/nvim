@@ -1,0 +1,6 @@
+require("burden.pluginConfig.kanagawa")
+require("burden.pluginConfig.lualine")
+require("burden.pluginConfig.nvim-tree")
+require("burden.pluginConfig.treesitter")
+require("burden.pluginConfig.telescope")
+require("burden.pluginConfig.cmp")
