@@ -45,7 +45,7 @@ require("lazy").setup(
       "williamboman/mason-lspconfig.nvim",
       config = function()
         require("mason-lspconfig").setup({
-          ensure_installed = {"clangd"}
+          ensure_installed = {"clangd", "pyright"}
         })
       end
     },
@@ -54,6 +54,7 @@ require("lazy").setup(
       config = function()
         local lspconfig = require("lspconfig")
         lspconfig.clangd.setup({})
+        lspconfig.pyright.setup({})
       end
     },
     {
