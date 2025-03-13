@@ -45,7 +45,7 @@ require("lazy").setup(
       "williamboman/mason-lspconfig.nvim",
       config = function()
         require("mason-lspconfig").setup({
-          ensure_installed = {"clangd", "pyright", "ts_ls", "java_language_server"}
+          ensure_installed = {"clangd", "pyright", "ts_ls", "jdtls"}
         })
       end
     },
@@ -56,7 +56,7 @@ require("lazy").setup(
         lspconfig.clangd.setup({}) -- c, c++
         lspconfig.pyright.setup({}) -- python
         lspconfig.ts_ls.setup({}) -- javascript, typescript
-        lspconfig.java_language_server.setup({}) -- java
+        lspconfig.jdtls.setup({}) -- java
       end
     },
     {
