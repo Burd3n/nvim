@@ -11,13 +11,19 @@ vim.opt.autoread = true
 vim.opt.scrolloff = 10
 vim.opt.updatetime = 50
 
+-- finding files alternative to telescope
+vim.cmd("set path+=**")
+
+-- display matching files when using tab complete
+vim.cmd("set wildmenu")
+
 -- use spaces for tabs and whatnot
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.shiftround = true
 vim.opt.expandtab = true
 
-vim.cmd [[ set termguicolors ]]
+vim.cmd([[ set termguicolors ]])
 
 -- Line numbers
 vim.wo.number = true
